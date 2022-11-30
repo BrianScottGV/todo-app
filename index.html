@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header container">
+        <h1 class="header__title">Todo App</h1>
+    </header>
+    
+    <main class="main container">
+        <form class="main__forms" id="form">
+             <label for="title" class="forms__title">
+                Titulo
+                <input type="text" class="forms__title" id="title"/>
+             </label>
+             <label for="description" class="forms__description">
+                Descripcion
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+             </label>
+             <button class="btn">Guardar</button>
+        </form>
+
+        <section class="main__content">
+            <div class="main__container">
+                <div>
+                    <h2 class="container__title">title</h2>
+                    <p class="container__description">description</p>
+                </div>
+                <div>
+                    <button class="btn__action">E</button>
+                    <button class="btn__action">X</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
